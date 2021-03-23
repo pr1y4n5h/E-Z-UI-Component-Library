@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Z UI</title>
+    <link rel="stylesheet" href="component.css">
+    <link rel="shortcut icon" type="image/jpg" href="/images/EZLogo1.png" />
+
+</head>
+
+<body>
+    <main class="doc-layout">
+        <nav>
+            <ul class="ul-left">
+
+                <li class="li-left">
+                    <button class="btn-left"><a href="#alert" class="li-left link-left">Alert</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#avatar" class="li-left link-left">Avatar</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#badge" class="li-left link-left">Badge</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#buttons" class="li-left link-left">Buttons</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#cards" class="li-left link-left">Cards</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#icon" class="li-left link-left">Icons</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#image" class="li-left link-left">Image</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#input" class="li-left link-left">Input</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#content-nav" class="li-left link-left">Navigation</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#lists" class="li-left link-left">Lists</a> </button>
+                </li>
+                <li class="li-left">
+                    <button class="btn-left"><a href="#modals" class="li-left link-left">Modal</a> </button>
+                </li>
+                
+                <li class="li-left">
+                    <button class="btn-left"><a href="#typography" class="li-left link-left">Typography</a> </button>
+                </li>
+                <li class="li-left">
+            </ul>
+        </nav>
+
+        <header class="header-top">
+            <img class="logo" src="/images/EZlogo1.png" />
+            <span class="heading-top">
+                E-Z Component Library
+            </span> </header>
+
+        <div class="content">
+            <section class="alert" id="alert">
+                <h1>Alert</h1>
+                <div class="alert-box">
+                    <h2>Type 1 Alerts</h2>
+                    <div class="success-alert">
+                        ✔️ This is a Success Alert! </div>
+                    <div class="failure-alert">
+                        ❌ This is a Failure Alert!
+                    </div>
+                    <div class="normal-alert">
+                        🔔 This is a Normal Alert!
+                    </div>
+
+                </div>
+
+                    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522success-alert%2522%253E%250A%25E2%259C%2594%25EF%25B8%258F%2520This%2520is%2520a%2520Success%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522failure-alert%2522%253E%250A%25E2%259D%258C%2520This%2520is%2520a%2520Failure%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522normal-alert%2522%253E%250A%25F0%259F%2594%2594%2520This%2520is%2520a%2520Normal%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A"
+  style="width: 800px; padding: 1.5rem; height: 407px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<div class="alert-box">
+                    <h2>Type 2 Alerts</h2>
+                    <div class="success-alert-2">
+                        ✔️ This is a Success Alert! </div>
+                    <div class="failure-alert-2">
+                        ❌ This is a Failure Alert!
+                    </div>
+                    <div class="normal-alert-2">
+                        🔔 This is a Normal Alert!
+                    </div>
+                </div>
+
+                <h3>Code Snippet :</h3>
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522success-alert-2%2522%253E%250A%25E2%259C%2594%25EF%25B8%258F%2520This%2520is%2520a%2520Success%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522failure-alert-2%2522%253E%250A%25E2%259D%258C%2520This%2520is%2520a%2520Failure%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522normal-alert-2%2522%253E%250A%25F0%259F%2594%2594%2520This%2520is%2520a%2520Normal%2520Alert%21%2520%250A%253C%252Fdiv%253E%250A"
+  style="width: 800px; padding: 1.5rem; height: 407px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </section>
+
+
+
+            <hr />
+
+            <section class="avatar" id="avatar">
+                <h1>Avatar</h1>
+                <div class="avatar-box">
+
+                    <img class="avatar1" src="/images/Card-image.jpg" />
+                    <img class="avatar2" src="/images/Card-image.jpg" />
+                    <img class="avatar3" src="/images/Card-image.jpg" />
+
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar1%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522avatar3%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E"
+                    style="width: 800px; height: 242px; border:0; padding: 1.5rem; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
+            </section>
+
+            <hr />
+
+            <section class="badge" id="badge">
+                <h1>Badges</h1>
+                <h2>Badges in Icon</h2>
+                <div class="badge-box">
+
+                    <span class="badges">
+                        <span class="badge-notif-1">
+                            3
+                        </span>
+                        <img class="badge-img" src="/images/shoppingcart.svg" />
+                    </span>
+                    <span class="badges">
+                        <span class="badge-notif-1">
+                            3
+                        </span>
+                        <img class="badge-img" src="/images/profile.svg" />
+                    </span>
+                    <span class="badges">
+                        <span class="badge-notif-1">
+                            3
+                        </span>
+                        <img class="badge-img" src="/images/wishlist.svg" />
+                    </span>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25203%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fshoppingcart.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25203%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fprofile.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25203%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fwishlist.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+                    style="width: 800px; padding: 1.5rem; height: 518px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <h2>Badges in Avatar</h2>
+                <div class="avatar-box-badge">
+                    <span class="avatar-badges">
+                        <span class="badge-available">
+                        </span>
+                        <img class="avatar2" src="/images/Card-image.jpg" />
+                    </span>
+                    <span class="avatar-badges">
+                        <span class="badge-busy">
+                        </span>
+                        <img class="avatar2" src="/images/Card-image.jpg" />
+                    </span>
+                    <span class="avatar-badges">
+                        <span class="badge-away">
+                        </span>
+                        <img class="avatar2" src="/images/Card-image.jpg" />
+                    </span>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-available%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-busy%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-away%2522%253E%250A%2520%2509%2520%253C%252Fspan%253E%250A%2509%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+                    style="width: 800px; padding: 1.5rem; height: 462px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </section>
+
+            <hr />
+
+            <section class="buttons" id="buttons">
+                <h1>Buttons</h1>
+                
+                <div class="buttons-box">
+                    <h2>Type 1 Buttons</h2>
+                    <div class="btn-div"><button class="primary-btn">Primary</button></div>
+                    <div class="btn-div"><button class="secondary-btn">Secondary</button></div>
+                    <div class="btn-div"><button class="warning-btn">Warning</button></div>
+                    <div class="btn-div"><button class="success-btn">Success</button></div>
+                    <div class="btn-div"><button class="dark-btn">Dark Mode</button></div>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cbutton%2520class%253D%2522primary-btn%2522%253E%2520Primary%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522secondary-btn%2522%253E%2520Secondary%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522warning-btn%2522%253E%2520Warning%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522success-btn%2522%253E%2520Success%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522dark-btn%2522%253E%2520Dark%2520Mode%2520%253C%252Fbutton%253E"
+                    style="width: 800px; height: 297px; padding: 1.5rem; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <div class="buttons-box">
+                    <h2>Type 2 Buttons</h2>
+                    <div class="btn-div"><button class="primary-btn-2">Primary</button></div>
+                    <div class="btn-div"><button class="secondary-btn-2">Secondary</button></div>
+                    <div class="btn-div"><button class="warning-btn-2">Warning</button></div>
+                    <div class="btn-div"><button class="success-btn-2">Success</button></div>
+                    <div class="btn-div"><button class="dark-btn-2">Dark Mode</button></div>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cbutton%2520class%253D%2522primary-btn-2%2522%253E%2520Primary%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522secondary-btn-2%2522%253E%2520Secondary%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522warning-btn-2%2522%253E%2520Warning%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522success-btn-2%2522%253E%2520Success%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522dark-btn-2%2522%253E%2520Dark%2520Mode%2520%253C%252Fbutton%253E"
+                    style="width: 800px; height: 298px; padding: 1.5rem; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <hr />
+
+            <section class="cards" id="cards">
+                <h1>Cards</h1>
+                <h2>Vertical Cards</h2>
+                <div class="cards-box">
+                    <div class="card-1">
+                        <h2>Type 1 </h2>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur? Autem iusto
+                            explicabo pariatur dicta perferendis veritatis doloremque nisi reprehenderit adipisci
+                            blanditiis, corrupti magnam deserunt voluptatum voluptatem incidunt distinctio enim?</p>
+                    </div>
+
+                    <div class="card-2">
+                        <div class="thumbnail">
+                            <img width="100%" src="/images/Card-image.jpg" />
+                        </div>
+                        <h2>Type 2</h2>
+                        <div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur? Autem
+                                iusto explicabo pariatur dicta perferendis veritatis doloremque nisi reprehenderit
+                                adipisci blanditiis, corrupti magnam deserunt voluptatum voluptatem incidunt distinctio
+                                enim?</p>
+                        </div>
+                    </div>
+
+                    <div class="card-3">
+                        <div class="thumbnail">
+                            <img width="100%" src="/images/Card-image.jpg" />
+                            <button class="x">X</button>
+                            <span class="new-arrival">New</span>
+                        </div>
+                        <div class="card-3-content">
+                            <h2>Type 3</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur? Autem
+                                iusto explicabo pariatur dicta perferendis veritatis doloremque nisi reprehenderit
+                                adipisci blanditiis, corrupti magnam deserunt voluptatum voluptatem incidunt distinctio
+                                enim?</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25201%2520%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%250A%250A%253Cdiv%2520class%253D%2522card-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522thumbnail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520width%253D%2522100%2525%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25202%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%250A%253Cdiv%2520class%253D%2522card-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522thumbnail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520width%253D%2522100%2525%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522x%2522%253EX%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522new-arrival%2522%253E%2520New%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-3-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25203%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520Lorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1024px; padding: 1.5rem; height: 904px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <h2>Horizontal Cards</h2>
+
+                
+
+                <div class="card-horizontal">
+                    <div class="card-hor">
+                        <div class="card-hor thumbnail">
+                            <img width="100%" src="/images/Card-image.jpg" />
+                        </div>
+                        <div class="card-hor-content">
+                            <h2>Type 1</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur? Autem
+                                iusto explicabo pariatur dicta perferendis veritatis doloremque nisi reprehenderit
+                                adipisci blanditiis, corrupti magnam deserunt voluptatum voluptatem incidunt distinctio
+                                enim?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="card-hor2">
+                        <div class="card-hor2 thumbnail">
+                            <img width="100%" src="/images/Card-image.jpg" />
+                        </div>
+                        <div class="card-hor2-content2">
+                            <h2>Type 2</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur? Autem
+                                iusto explicabo pariatur dicta perferendis veritatis doloremque nisi reprehenderit
+                                adipisci blanditiis, corrupti magnam deserunt voluptatum voluptatem incidunt distinctio
+                                enim?</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Code Snippet :</h3>
+
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor%2520thumbnail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520width%253D%2522100%2525%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25201%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%250A%250A%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor2%2520thumbnail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520width%253D%2522100%2525%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor2-content2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25202%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="width: 1024px; padding: 1.5rem; height: 757px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+
+
+
+            </section>
+            <hr />
+            <section class="icon" id="icon">
+                <h1>Icons</h1>
+                <div class="icon-box">
+                    <span class="icons">
+                        <img class="icons-img" src="/images/shoppingcart.svg" />
+                    </span>
+                    <span class="icons">
+                        <img class="icons-img" src="/images/profile.svg" />
+                    </span>
+                    <span class="icons">
+                        <img class="icons-img" src="/images/wishlist.svg" />
+                    </span>
+                </div>
+                <h3>Code Snippet :</h3>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fshoppingcart.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2509%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fprofile.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fwishlist.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+                    style="width: 800px; padding: 1.5rem; height: 370px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+            <hr />
+
+            <section class="image" id="image">
+                <h1>Image</h1>
+                <div class="image-box">
+                    <div class="normal-image-div">
+                        <img class="normal-image" src="/images/IMAGESAMPLE.jpg" />
+                    </div>
+                    <h2 class="img-h2">A normal image</h2>
+                    <div class="rounded-image-div">
+                        <img class="rounded-image" src="/images/IMAGESAMPLE.jpg" />
+
+                    </div>
+                    <h2 class="img-h2">A rounded image</h2>
+                    <div class="circular-image-div">
+                        <img class="circular-image" src="/images/IMAGESAMPLE.jpg" />
+
+                    </div>
+                    <h2 class="img-h2">A circular image</h2>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cimg%2520class%253D%2522normal-image%2522%2520src%253D%2522%252Fimages%252FIMAGESAMPLE.jpg%2522%2520%252F%253E%250A%253Ch2%253E%2520A%2520normal%2520image%2520%253C%252Fh2%253E%250A%250A%250A%253Cimg%2520class%253D%2522rounded-image%2522%2520src%253D%2522%252Fimages%252FIMAGESAMPLE.jpg%2522%2520%252F%253E%250A%253Ch2%253E%2520A%2520rounded%2520image%2520%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cimg%2520class%253D%2522circular-image%2522%2520src%253D%2522%252Fimages%252FIMAGESAMPLE.jpg%2522%2520%252F%253E%250A%253Ch2%253E%2520A%2520circular%2520image%2520%253C%252Fh2%253E"
+                    style="width: 800px; padding: 1.5rem; height: 389px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+            <hr />
+
+            <section class="input" id="input">
+                <h1>Input</h1>
+                <div class="input-box">
+                    <div class="input-div1">
+                        <input placeholder="Enter text here" class="normal-input" />
+                        <p>A normal input field</p>
+                    </div>
+                    <div class="input-div2">
+                        <input class="error-input" />
+                        <p style="color: red;"> *Input field in case of error</p>
+                    </div>
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-div1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520class%253D%2522normal-input%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EA%2520normal%2520input%2520field%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-div2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522error-input%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520style%253D%2522color%253A%2520red%253B%2522%253E%2520*Input%2520field%2520in%2520case%2520of%2520error%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                    style="width: 800px; padding:1.5rem; height: 389px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </section>
+
+            <hr />
+
+            <section class="content-nav" id="content-nav">
+                <h1>Navigation</h1>
+                <div class="nav-box">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="navigation-content">
+                                HOME
+                            </li>
+                            <li class="navigation-content">
+                                TAG
+                            </li>
+                            <li class="navigation-content">
+                                AUTHOR
+                            </li>
+                            <li class="navigation-content">
+                                HELP
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <h3>Code Snippet :</h3>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%253E%250A%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522navigation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522navigation-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520HOME%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522navigation-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520TAG%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522navigation-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AUTHOR%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522navigation-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520HELP%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+                    style="width: 800px;padding: 1.5rem; margin: 2rem; height: 481px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <hr />
+
+            <section class="lists" id="lists">
+                <h1>Lists</h1>
+                <div class="list-box">
+                    <h2>Normal Lists</h2>
+                    <ul class="list-content-ul">
+                        <li class="list-content-ul list-content-li">
+                            This is List Item 1
+                        </li>
+                        <li class="list-content-ul list-content-li">
+                            This is List Item 2
+                        </li>
+                        <li class="list-content-ul list-content-li">
+                            This is List Item 3
+                        </li>
+                        <li class="list-content-ul list-content-li">
+                            This is List Item 4
+                        </li>
+                        <li class="list-content-ul list-content-li">
+                            This is List Item 5
+                        </li>
+                    </ul>
+                    <h3>Code Snippet :</h3>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-content-ul%2522%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul%2520list-content-li%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25201%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul%2520list-content-li%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25202%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul%2520list-content-li%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25203%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul%2520list-content-li%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25204%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul%2520list-content-li%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25205%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        style="width: 800px;padding: 1.5rem;  height: 499px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                    <h2>Spaced Lists</h2>
+                    <ul class="list-content-ul-2">
+                        <li class="list-content-ul-2 list-content-li-2">
+                            This is List Item 1
+                        </li>
+                        <li class="list-content-ul-2 list-content-li-2">
+                            This is List Item 2
+                        </li>
+                        <li class="list-content-ul-2 list-content-li-2">
+                            This is List Item 3
+                        </li>
+                        <li class="list-content-ul-2 list-content-li-2">
+                            This is List Item 4
+                        </li>
+                        <li class="list-content-ul-2 list-content-li-2">
+                            This is List Item 5
+                        </li>
+                    </ul>
+                    <h3>Code Snippet :</h3>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-content-ul-2%2522%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul-2%2520list-content-li-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25201%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul-2%2520list-content-li-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25202%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul-2%2520list-content-li-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25203%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul-2%2520list-content-li-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25204%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-content-ul-2%2520list-content-li-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520List%2520Item%25205%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        style="width: 800px; padding: 1.5rem; height: 499px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <hr />
+
+            <section class="modals" id="modals">
+                <h1>Modals</h1>
+                <div class="modal-box">
+                    <div class="modal">
+                        Are you sure you want to exit? Press X to exit.
+                    </div>
+                    <div class="modal-x">
+                        X
+                    </div>
+
+                </div>
+                <h3>Code Snippet :</h3>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Are%2520you%2520sure%2520you%2520want%2520to%2520exit%253F%2520Press%2520X%2520to%2520exit.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522modal-x%2522%253E%250A%2520%2520%2520%2520X%250A%253C%252Fdiv%253E"
+                    style="width: 800px; padding: 2rem; height: 297px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <hr />
+
+            <section class="typography" id="typography">
+                <h1>Typography</h1>
+
+                <div class="text-box">
+                    <h2>Texts</h2>
+                    <div class="big-text">
+                        This is a bigger text...
+                    </div>
+                    <div class="medium-text">
+                        This is a medium text...
+                    </div>
+                    <div class="small-text">
+                        This is a smaller text...
+                    </div>
+
+                </div>
+                <h3>Code Snippet :</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522big-text%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520bigger%2520text...%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522medium-text%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520medium%2520text...%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522small-text%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520smaller%2520text...%250A%253C%252Fdiv%253E"
+                    style="width: 800px; padding: 1.5rem; height: 389px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <div class="heading-box">
+                    <h2>Headings</h2>
+                    <div class="big-heading">
+                        This is a bigger heading...
+                    </div>
+                    <div class="medium-heading">
+                        This is a medium heading...
+                    </div>
+                    <div class="small-heading">
+                        This is a smaller heading...
+                    </div>
+                </div>
+                <h3>Code Snippet :</h3>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522big-heading%2522%253E%250A%2520%2520%2520%2520%2520This%2520is%2520a%2520bigger%2520heading...%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522medium-heading%2522%253E%250A%2520%2520%2520%2520%2520This%2520is%2520a%2520medium%2520heading...%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522small-heading%2522%253E%250A%2520%2520%2520%2520%2520This%2520is%2520a%2520smaller%2520heading...%250A%253C%252Fdiv%253E"
+                    style="width: 800px; height: 389px; padding: 1.5rem; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+
+            <footer>
+                <div>
+                    <ul class="foot">
+                        <li class="foot-content">
+                            <a href="https://www.instagram.com/pr1y4n5h/"> <img height="25vh"
+                                    src="/images/instalogo.png" /></a>
+                        </li>
+                        <li class="foot-content">
+                            <a href="https://www.facebook.com/me.thepriyansh/"> <img height="25vh"
+                                    src="/images/fblogo.png" /> </a>
+                        </li>
+                        <li class="foot-content">
+                            <a href="https://github.com/pr1y4n5h"> <img height="25vh" src="/images/githublogo.png" />
+                            </a>
+                        </li>
+                        <li class="foot-content">
+                            <a href="https://www.linkedin.com/in/priyansh-maurya-a0396760/"><img height="25vh"
+                                    src="/images/linkedinlogo.png" /> </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="email">
+                    Email - priyansh.maurya@gmail.com
+                </div>
+
+                <div class="priyansh">
+                    Made with ❤ by Priyansh!
+                </div>
+            </footer>
+
+        </div>
+    </main>
+</body>
+
+</html>
