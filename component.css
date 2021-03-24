@@ -948,5 +948,5 @@ footer {
     grid-template-areas:
         "head head"
         "nav content"
-        "footer footer";
+        "nav footer";
 }
