@@ -950,3 +950,35 @@ footer {
         "nav content"
         "nav footer";
 }
+
+
+@media only screen and (max-width: 688px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .doc-layout {
+        display: grid;
+        grid-template-areas:
+            "head"
+            "content"
+            "footer";
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    * {
+     width: 70%;   
+    } 
+
+    footer {
+        height: 50px;
+        background-color: black;
+        color: white;
+        margin: 0;
+    }
+    
+}
