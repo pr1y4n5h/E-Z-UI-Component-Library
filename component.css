@@ -971,14 +971,9 @@ footer {
     }
 
     * {
-     width: 70%;   
+     width: 80%;   
     } 
 
-    footer {
-        height: 50px;
-        background-color: black;
-        color: white;
-        margin: 0;
-    }
+
     
 }
