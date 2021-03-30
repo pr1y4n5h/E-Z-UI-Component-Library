@@ -816,6 +816,32 @@ header {
     border-radius: 1rem 1rem;
 }
 
+.navigation-light {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #E5E7EB;
+    height: 18vh;
+}
+
+
+.navigation-content-light:hover {
+    background-color: orange;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+
+.navigation-content-light:active {
+    transform: translateY(4px);
+}
+
+.navigation-light .navigation-content-light {
+    display: inline;
+    padding: 14px 16px;
+    border-radius: 1rem 1rem;
+}
+
 
 .modal-box {
     border: 1px solid;
