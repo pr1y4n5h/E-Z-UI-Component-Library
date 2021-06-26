@@ -197,8 +197,6 @@
     bottom: 7px;
 }
 
-
-
 /* Buttons */
 
 
@@ -295,25 +293,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .secondary-btn-1 {
     background: var(--base-color); 
     border-radius: 6px;
     color: var(--primary-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 1px solid ;
+    border: 2px solid ;
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -321,7 +307,7 @@
 
 .secondary-btn-1:hover {
     background: var(--primary-color);
-    border: 1px solid var(--base-color);
+    border: 2px solid var(--base-color);
     color: var(--base-color);
     transition: all 0.2s ease-in-out;
 }
@@ -330,87 +316,76 @@
     transform: translateY(6px);
 }
 
-
-
-
 .secondary-btn-2 {
-    padding: 1rem;
-    border: 2px solid blue;
-    color: blue;
-    font-weight: bolder;
-    background-color: white;
-    border-radius: 1rem;
+    background: var(--base-color); 
+    border-radius: 6px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-
-
-
-
-.success-btn-2 {
-    padding: 1rem;
-    border: 2px solid darkgreen;
-    background-color: white;
-    font-weight: bolder;
-    color: darkgreen;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-
-
-.dark-btn-2 {
-    padding: 1rem;
-    border: 2px solid black;
-    font-weight: bolder;
-    background-color: white;
-    color: black;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-
-
 
 .secondary-btn-2:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    border: 2px solid var(--secondary-color);
-    background-color: blue;
-    color: white;
+    background: var(--secondary-color);
+    border: 2px solid var(--base-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
 }
 
 .secondary-btn-2:active {
-    transform: translateY(4px);
+    transform: translateY(6px);
 }
 
 
-
-.success-btn-2:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    background-color: var(--primary-color-success);
+.secondary-btn-3 {
+    background: var(--base-color); 
+    border-radius: 6px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.success-btn-2:active {
-    transform: translateY(4px);
+.secondary-btn-3:hover {
+    background: var(--tertiary-color);
+    border: 2px solid var(--base-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
 }
 
-
-
-.dark-btn-2:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    background-color: black;
-    color: whitesmoke;
+.secondary-btn-3:active {
+    transform: translateY(6px);
 }
 
-
-
-
-.dark-btn-2:active {
-    transform: translateY(4px);
-
+.secondary-btn-4 {
+    background: var(--base-color); 
+    border-radius: 6px;
+    color: var(--dark-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
+
+.secondary-btn-4:hover {
+    background: var(--dark-color);
+    border: 2px solid var(--base-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.secondary-btn-4:active {
+    transform: translateY(6px);
+}
+
 
 .icons {
     width: 40px;
