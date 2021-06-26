@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
-    --primary-color: #FF8048;
+    --primary-color: #ff4e00;
     --primary-color-success: #85fca7;
     --primary-color-failure: #fcb8b8;
-    --secondary-color: #a0f4f7;
+    --secondary-color: #18dcff;
     --secondary-color-bg: #dbdace;
-
+    --base-color: #fff;
+    --tertiary-color: #0be881;
+    --dark-color: #000;
 }
 
 /* Components */
@@ -194,46 +196,144 @@
     left: 66px;
     bottom: 7px;
 }
-.buttons-box {
-    display: flex;
-    justify-content: space-evenly;
-    border: none;
-    flex-wrap: wrap;
-    padding: 2rem;
-    border-radius: 1rem;
-    height: 5rem;
+
+
+
+/* Buttons */
+
+
+.primary-btn-1 {
+    background: var(--primary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+.primary-btn-1:hover {
+    background: var(--base-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+}
+  
+.primary-btn-1:active {
+    transform: translateY(6px);
 }
 
-.buttons-box .primary-btn {
-    padding: 1rem;
-    border: none;
-    background-color: orange;
-    color: black;
-    border-radius: 1rem;
+.primary-btn-2 {
+    background: var(--secondary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid;
+    outline: none;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.buttons-box .primary-btn-2 {
-    padding: 1rem;
-    border: 2px solid orange;
-    color: orange;
-    font-weight: bolder;
-    background-color: white;
-    border-radius: 1rem;
+.primary-btn-2:hover {
+    background: var(--base-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.primary-btn-2:active {
+    transform: translateY(6px);
+}
+
+.primary-btn-3 {
+    background: var(--tertiary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid;
+    outline: none;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
+.primary-btn-3:hover {
+    background: var(--base-color);
+    border: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+    transition: all 0.2s ease-in-out;
+}
 
-.buttons-box .secondary-btn {
-    padding: 1rem;
-    border: none;
-    background-color: blue;
-    color: white;
-    border-radius: 1rem;
+.primary-btn-3:active {
+    transform: translateY(6px);
+}
+
+.primary-btn-4 {
+    background: var(--dark-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid;
+    outline: none;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.buttons-box .secondary-btn-2 {
+.primary-btn-4:hover {
+    background: var(--base-color);
+    border: 1px solid var(--dark-color);
+    color: var(--dark-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.primary-btn-4:active {
+    transform: translateY(6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secondary-btn-1 {
+    background: var(--base-color); 
+    border-radius: 6px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.secondary-btn-1:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--base-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.secondary-btn-1:active {
+    transform: translateY(6px);
+}
+
+
+
+
+.secondary-btn-2 {
     padding: 1rem;
     border: 2px solid blue;
     color: blue;
@@ -243,35 +343,10 @@
     cursor: pointer;
 }
 
-.buttons-box .warning-btn {
-    padding: 1rem;
-    border: none;
-    background-color: #ff0000;
-    color: black;
-    border-radius: 1rem;
-    cursor: pointer;
-}
 
-.buttons-box .warning-btn-2 {
-    padding: 1rem;
-    border: 2px solid #ff0000;
-    color: #ff0000;
-    font-weight: bolder;
-    background-color: white;
-    border-radius: 1rem;
-    cursor: pointer;
-}
 
-.buttons-box .success-btn {
-    padding: 1rem;
-    border: none;
-    background-color: var(--primary-color-success);
-    color: darkgreen;
-    border-radius: 1rem;
-    cursor: pointer;
-}
 
-.buttons-box .success-btn-2 {
+.success-btn-2 {
     padding: 1rem;
     border: 2px solid darkgreen;
     background-color: white;
@@ -281,16 +356,9 @@
     cursor: pointer;
 }
 
-.buttons-box .dark-btn {
-    padding: 1rem;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 1rem;
-    cursor: pointer;
-}
 
-.buttons-box .dark-btn-2 {
+
+.dark-btn-2 {
     padding: 1rem;
     border: 2px solid black;
     font-weight: bolder;
@@ -301,57 +369,7 @@
 }
 
 
-.primary-btn:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    background-color: darkorange;
-    border: 2px solid black;
-}
 
-.primary-btn-2:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    color: black;
-    background-color: orange;
-    border: 2px solid orange;
-}
-
-.primary-btn:active {
-    transform: translateY(4px);
-}
-
-.primary-btn-2:active {
-    transform: translateY(4px);
-}
-
-.warning-btn:hover {
-    color: whitesmoke;
-    font-size: 16px;
-    font-weight: bolder;
-    border: 2px solid black;
-}
-
-.warning-btn-2:hover {
-    color: whitesmoke;
-    background-color: #ff0000;
-    font-size: 16px;
-    font-weight: bolder;
-    border: 2px solid #ff0000;
-}
-
-.warning-btn:active {
-    transform: translateY(4px);
-}
-
-.warning-btn-2:active {
-    transform: translateY(4px);
-}
-
-.secondary-btn:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    border: 2px solid black;
-}
 
 .secondary-btn-2:hover {
     font-size: 16px;
@@ -361,19 +379,11 @@
     color: white;
 }
 
-.secondary-btn:active {
-    transform: translateY(4px);
-}
-
 .secondary-btn-2:active {
     transform: translateY(4px);
 }
 
-.success-btn:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    border: 2px solid black;
-}
+
 
 .success-btn-2:hover {
     font-size: 16px;
@@ -381,19 +391,11 @@
     background-color: var(--primary-color-success);
 }
 
-.success-btn:active {
-    transform: translateY(4px);
-}
-
 .success-btn-2:active {
     transform: translateY(4px);
 }
 
 
-.dark-btn:hover {
-    font-size: 16px;
-    font-weight: bolder;
-}
 
 .dark-btn-2:hover {
     font-size: 16px;
@@ -402,10 +404,8 @@
     color: whitesmoke;
 }
 
-.dark-btn:active {
-    transform: translateY(4px);
 
-}
+
 
 .dark-btn-2:active {
     transform: translateY(4px);
@@ -704,8 +704,6 @@
 .modal-x:hover {
     background-color: red;
 }
-
-
 
 .text-box {
     display: flex;
