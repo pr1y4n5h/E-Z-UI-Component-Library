@@ -111,7 +111,7 @@ header {
 
 
 
-
+/* 
 /* Components */
 
 .alert-box {
@@ -593,9 +593,6 @@ header {
 }
 
 
-.card-horizontal {
-    display: flex;
-}
 
 
 .card-hor2 {
@@ -924,7 +921,7 @@ header {
 .heading-box .small-heading {
     font-size: 1.75em;
     font-weight: bolder;
-}
+} */
 
 .content {
     grid-area: content;
