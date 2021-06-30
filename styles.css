@@ -206,7 +206,7 @@
     color: var(--base-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 1px solid ;
+    border: 2px solid var(--primary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -214,7 +214,6 @@
   
 .primary-btn-1:hover {
     background: var(--base-color);
-    border: 1px solid var(--primary-color);
     color: var(--primary-color);
     transition: all 0.2s ease-in-out;
 }
@@ -229,7 +228,7 @@
     color: var(--base-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 1px solid;
+    border: 2px solid var(--secondary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -237,7 +236,6 @@
 
 .primary-btn-2:hover {
     background: var(--base-color);
-    border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     transition: all 0.2s ease-in-out;
 }
@@ -252,7 +250,7 @@
     color: var(--base-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 1px solid;
+    border: 2px solid var(--tertiary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -260,7 +258,6 @@
 
 .primary-btn-3:hover {
     background: var(--base-color);
-    border: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
     transition: all 0.2s ease-in-out;
 }
@@ -275,7 +272,7 @@
     color: var(--base-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 1px solid;
+    border: 2px solid var(--dark-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -283,7 +280,6 @@
 
 .primary-btn-4:hover {
     background: var(--base-color);
-    border: 1px solid var(--dark-color);
     color: var(--dark-color);
     transition: all 0.2s ease-in-out;
 }
@@ -299,7 +295,7 @@
     color: var(--primary-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 2px solid ;
+    border: 2px solid var(--primary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -307,7 +303,6 @@
 
 .secondary-btn-1:hover {
     background: var(--primary-color);
-    border: 2px solid var(--base-color);
     color: var(--base-color);
     transition: all 0.2s ease-in-out;
 }
@@ -322,7 +317,7 @@
     color: var(--secondary-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 2px solid ;
+    border: 2px solid var(--secondary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -330,7 +325,6 @@
 
 .secondary-btn-2:hover {
     background: var(--secondary-color);
-    border: 2px solid var(--base-color);
     color: var(--base-color);
     transition: all 0.2s ease-in-out;
 }
@@ -346,7 +340,7 @@
     color: var(--tertiary-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 2px solid ;
+    border: 2px solid var(--tertiary-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -354,7 +348,6 @@
 
 .secondary-btn-3:hover {
     background: var(--tertiary-color);
-    border: 2px solid var(--base-color);
     color: var(--base-color);
     transition: all 0.2s ease-in-out;
 }
@@ -369,7 +362,7 @@
     color: var(--dark-color);
     text-decoration: none;
     padding: 1rem 1rem;
-    border: 2px solid ;
+    border: 2px solid var(--dark-color);
     outline: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -377,7 +370,6 @@
 
 .secondary-btn-4:hover {
     background: var(--dark-color);
-    border: 2px solid var(--base-color);
     color: var(--base-color);
     transition: all 0.2s ease-in-out;
 }
