@@ -1,721 +1,627 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 :root {
-    --primary-color: #ff4e00;
-    --primary-color-success: #85fca7;
-    --primary-color-failure: #fcb8b8;
-    --secondary-color: #18dcff;
-    --secondary-color-bg: #dbdace;
-    --base-color: #fff;
-    --tertiary-color: #0be881;
-    --dark-color: #000;
+  --primary-color: #ff4e00;
+  --primary-color-success: #85fca7;
+  --primary-color-failure: #fcb8b8;
+  --secondary-color: #18dcff;
+  --secondary-color-bg: #dbdace;
+  --base-color: #fff;
+  --tertiary-color: #0be881;
+  --dark-color: #000;
 }
 
 /* Components */
 
-.success-alert {
-    border: 2px solid;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    color: darkgreen;
-    font-weight: bolder;
-    background-color: var(--primary-color-success);
-    box-shadow: #116304 5px 5px 5px;
-}
-
-.failure-alert {
-    border: 2px solid #fc0202;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    font-weight: bolder;
-    color: darkred;
-    background-color: var(--primary-color-failure);
-    box-shadow: #fc0202 5px 5px 10px;
-}
-
-.normal-alert {
-    border: 2px solid #0400fc;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    font-weight: bolder;
-    color: #0400fc;
-    background-color: var(--secondary-color);
-    box-shadow: #0400fc 5px 5px 10px;
-}
-
-.success-alert-2 {
-    border: 2px solid;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    color: darkgreen;
-    font-weight: bolder;
-    box-shadow: #116304 3px 3px 6px;
-}
-
-.failure-alert-2 {
-    border: 2px solid #fc0202;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    font-weight: bolder;
-    color: darkred;
-    box-shadow: #fc0202 3px 3px 6px;
-}
-
-.normal-alert-2 {
-    border: 2px solid #0400fc;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    font-weight: bolder;
-    color: #0400fc;
-    box-shadow: #0400fc 3px 3px 6px;
-}
+@import url("Components/alert.style.css");
 
 .avatar1 {
-    height: 8vh;
-    width: 8vh;
-    border: 1px solid;
-    border-radius: 50%;
-    object-fit: cover;
-
+  height: 8vh;
+  width: 8vh;
+  border: 1px solid;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .avatar2 {
-    height: 15vh;
-    width: 15vh;
-    border: 1.5px solid;
-    border-radius: 50%;
-    object-fit: cover;
-
+  height: 15vh;
+  width: 15vh;
+  border: 1.5px solid;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .avatar3 {
-    height: 25vh;
-    width: 25vh;
-    border: 2px solid;
-    border-radius: 50%;
-    object-fit: cover;
+  height: 25vh;
+  width: 25vh;
+  border: 2px solid;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .normal-input {
-    border: 2px solid;
-    width: 30vh;
-    padding: 0.5rem;
-
+  border: 2px solid;
+  width: 30vh;
+  padding: 0.5rem;
 }
 
 .error-input {
-    border: 2px solid red;
-    width: 30vh;
-    padding: 0.5rem;
-    color: red;
+  border: 2px solid red;
+  width: 30vh;
+  padding: 0.5rem;
+  color: red;
 }
 
 .error-input:active {
-    border: 4px solid red;
+  border: 4px solid red;
 }
 
-
 .badge-img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .badges {
-    position: relative;
-    width: 40px;
+  position: relative;
+  width: 40px;
 }
 
 .avatar-badges {
-    position: relative;
-    width: 40px;
+  position: relative;
+  width: 40px;
 }
 
 .avatar-box-badge {
-    display: flex;
-    height: 30vh;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  height: 30vh;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-
 .badge-notif-1 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    width: 15px;
-    color: black;
-    font-weight: bolder;
-    border-radius: 50%;
-    height: 15px;
-    padding: 3px;
-    left: 25px;
-    bottom: 32px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 15px;
+  color: black;
+  font-weight: bolder;
+  border-radius: 50%;
+  height: 15px;
+  padding: 3px;
+  left: 25px;
+  bottom: 32px;
 }
 
 .badge-available {
-    position: absolute;
-    background-color: green;
-    width: 18px;
-    height: 18px;
-    font-weight: bolder;
-    border-radius: 50%;
-    left: 66px;
-    bottom: 7px;
+  position: absolute;
+  background-color: green;
+  width: 18px;
+  height: 18px;
+  font-weight: bolder;
+  border-radius: 50%;
+  left: 66px;
+  bottom: 7px;
 }
 
 .badge-busy {
-    position: absolute;
-    background-color: red;
-    width: 18px;
-    height: 18px;
-    font-weight: bolder;
-    border-radius: 50%;
-    left: 66px;
-    bottom: 7px;
+  position: absolute;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  font-weight: bolder;
+  border-radius: 50%;
+  left: 66px;
+  bottom: 7px;
 }
 
 .badge-away {
-    position: absolute;
-    background-color: yellow;
-    width: 18px;
-    height: 18px;
-    font-weight: bolder;
-    border-radius: 50%;
-    left: 66px;
-    bottom: 7px;
+  position: absolute;
+  background-color: yellow;
+  width: 18px;
+  height: 18px;
+  font-weight: bolder;
+  border-radius: 50%;
+  left: 66px;
+  bottom: 7px;
 }
 
 /* Buttons */
 
-
 .primary-btn-1 {
-    background: var(--primary-color);
-    border-radius: 4px;
-    color: var(--base-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--primary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-  
-.primary-btn-1:hover {
-    background: var(--base-color);
-    color: var(--primary-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: var(--base-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--primary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
-  
+
+.primary-btn-1:hover {
+  background: var(--base-color);
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
 .primary-btn-1:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .primary-btn-2 {
-    background: var(--secondary-color);
-    border-radius: 4px;
-    color: var(--base-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--secondary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--base-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .primary-btn-2:hover {
-    background: var(--base-color);
-    color: var(--secondary-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--base-color);
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .primary-btn-2:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .primary-btn-3 {
-    background: var(--tertiary-color);
-    border-radius: 4px;
-    color: var(--base-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--tertiary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--tertiary-color);
+  border-radius: 4px;
+  color: var(--base-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .primary-btn-3:hover {
-    background: var(--base-color);
-    color: var(--tertiary-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--base-color);
+  color: var(--tertiary-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .primary-btn-3:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .primary-btn-4 {
-    background: var(--dark-color);
-    border-radius: 4px;
-    color: var(--base-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--dark-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--dark-color);
+  border-radius: 4px;
+  color: var(--base-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--dark-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .primary-btn-4:hover {
-    background: var(--base-color);
-    color: var(--dark-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--base-color);
+  color: var(--dark-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .primary-btn-4:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
-
 .secondary-btn-1 {
-    background: var(--base-color); 
-    border-radius: 6px;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--primary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--base-color);
+  border-radius: 6px;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--primary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .secondary-btn-1:hover {
-    background: var(--primary-color);
-    color: var(--base-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--primary-color);
+  color: var(--base-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary-btn-1:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .secondary-btn-2 {
-    background: var(--base-color); 
-    border-radius: 6px;
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--secondary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--base-color);
+  border-radius: 6px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .secondary-btn-2:hover {
-    background: var(--secondary-color);
-    color: var(--base-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--secondary-color);
+  color: var(--base-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary-btn-2:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
-
 .secondary-btn-3 {
-    background: var(--base-color); 
-    border-radius: 6px;
-    color: var(--tertiary-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--tertiary-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--base-color);
+  border-radius: 6px;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .secondary-btn-3:hover {
-    background: var(--tertiary-color);
-    color: var(--base-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--tertiary-color);
+  color: var(--base-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary-btn-3:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .secondary-btn-4 {
-    background: var(--base-color); 
-    border-radius: 6px;
-    color: var(--dark-color);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border: 2px solid var(--dark-color);
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  background: var(--base-color);
+  border-radius: 6px;
+  color: var(--dark-color);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid var(--dark-color);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .secondary-btn-4:hover {
-    background: var(--dark-color);
-    color: var(--base-color);
-    transition: all 0.2s ease-in-out;
+  background: var(--dark-color);
+  color: var(--base-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary-btn-4:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
-
 .icons {
-    width: 40px;
+  width: 40px;
 }
 
 .icons-img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .card-horizontal {
-    display: flex;
-    padding: 2rem;
+  display: flex;
+  padding: 2rem;
 }
 
-
 .card-hor {
-    display: flex;
-    justify-content: space-evenly;
-    border: 3px solid black;
-    margin: 1rem;
-    padding: 1rem;
-    max-width: 600px;
-    box-shadow: black 5px 5px 10px;
-    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  box-shadow: black 5px 5px 10px;
+  position: relative;
 }
 
 .card-hor .card-hor-content {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 
 .card-horizontal {
-    display: flex;
+  display: flex;
 }
 
-
 .card-hor2 {
-    display: flex;
-    justify-content: space-evenly;
-    border: 3px solid black;
-    max-width: 600px;
-    box-shadow: black 1px 1px 4px;
-    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid black;
+  max-width: 600px;
+  box-shadow: black 1px 1px 4px;
+  position: relative;
 }
 
 .card-hor2 .card-hor2-content2 {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-
 .card-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 2;
-    border: 3px solid black;
-    margin: 1rem;
-    padding: 1rem;
-    max-width: 200px;
-    box-shadow: black 5px 5px 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 2;
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 200px;
+  box-shadow: black 5px 5px 10px;
 }
 
 .card-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 2;
-    border: 3px solid black;
-    padding: 1rem;
-    margin: 1rem;
-    max-width: 250px;
-    box-shadow: black 5px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+  border: 3px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 250px;
+  box-shadow: black 5px 5px 10px;
 }
 
-
 .card-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 2;
-    border: 3px solid black;
-    margin: 1rem;
-    max-width: 275px;
-    box-shadow: black 5px 5px 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+  border: 3px solid black;
+  margin: 1rem;
+  max-width: 275px;
+  box-shadow: black 5px 5px 10px;
 }
 
 .card-3-content {
-    padding: 1rem;
-    justify-content: space-evenly;
+  padding: 1rem;
+  justify-content: space-evenly;
 }
 
-
 .card-3 .thumbnail {
-    position: relative;
+  position: relative;
 }
 
 .card-3 .x {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .card-3 .new-arrival {
-    position: absolute;
-    left: 0px;
-    top: 50px;
-    background-color: var(--secondary-color);
-    padding: 0.25em;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  background-color: var(--secondary-color);
+  padding: 0.25em;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .x {
-    font-weight: bolder;
-    background-color: inherit;
-    font-size: larger;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+  font-weight: bolder;
+  background-color: inherit;
+  font-size: larger;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .x:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .x:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .image-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
 }
 
 .img-h2 {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .normal-image {
-    max-width: 100%;
-    height: auto;
-    box-shadow: black 5px 10px 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: black 5px 10px 10px;
 }
 
 .rounded-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5rem 5rem;
-    box-shadow: black 5px 10px 10px;
-
+  max-width: 100%;
+  height: auto;
+  border-radius: 5rem 5rem;
+  box-shadow: black 5px 10px 10px;
 }
 
 .circular-image {
-    width: 30em;
-    height: 30em;
-    border-radius: 50%;
-    box-shadow: black 5px 10px 10px;
-    object-fit: cover;
-
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  box-shadow: black 5px 10px 10px;
+  object-fit: cover;
 }
-
 
 .list-content-ul {
-    list-style: none;
-    padding: 1rem;
-    max-width: 70%;
+  list-style: none;
+  padding: 1rem;
+  max-width: 70%;
 }
 
-
 .list-content-ul .list-content-li {
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 1rem;
-
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 1rem;
 }
 
 .list-content-li:hover {
-    background-color: orange;
-    font-weight: bolder;
-    font-size: 1.5em;
+  background-color: orange;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 
-
 .list-content-li:active {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .list-content-ul-2 {
-    list-style: none;
-    padding: 1rem;
-    max-width: 70%;
-    margin: 1.5rem;
-
+  list-style: none;
+  padding: 1rem;
+  max-width: 70%;
+  margin: 1.5rem;
 }
 
 .list-content-ul-2 .list-content-li-2 {
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 1rem;
-
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 1rem;
 }
 
 .list-content-li-2:hover {
-    background-color: orange;
-    font-weight: bolder;
-    font-size: 1.5em;
+  background-color: orange;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
-
 
 .list-content-li-2:active {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-
 .nav-box {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: black;
-    color: white;
-    height: 18vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 18vh;
 }
 
-
 .navigation-content:hover {
-    background-color: orange;
-    cursor: pointer;
-    color: black;
-    font-weight: bolder;
+  background-color: orange;
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
 }
 
 .navigation-content:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .navigation .navigation-content {
-    display: inline;
-    padding: 14px 16px;
-    border-radius: 1rem 1rem;
+  display: inline;
+  padding: 14px 16px;
+  border-radius: 1rem 1rem;
 }
-
 
 .modal-box {
-    border: 1px solid;
-    height: 150px;
-    margin: 1rem;
-    box-shadow: black 5px 5px 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  border: 1px solid;
+  height: 150px;
+  margin: 1rem;
+  box-shadow: black 5px 5px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-
 .modal {
-    position: absolute;
-    font-size: 1.5em;
-
+  position: absolute;
+  font-size: 1.5em;
 }
 
 .modal-box .modal-x {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    right: 5px;
-    top: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
 }
 
 .modal-x:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .text-box {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .text-box .big-text {
-    font-size: 2.5em;
-    font-weight: lighter;
+  font-size: 2.5em;
+  font-weight: lighter;
 }
 
 .text-box .medium-text {
-    font-size: 2em;
-    font-weight: lighter;
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 .text-box .small-text {
-    font-size: 1.5em;
-    font-weight: lighter;
+  font-size: 1.5em;
+  font-weight: lighter;
 }
 
-
 .heading-box {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    padding: 1.5rem;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 1.5rem;
+  justify-content: space-between;
 }
 
 .heading-box .big-heading {
-    font-size: 4em;
-    font-weight: bolder;
+  font-size: 4em;
+  font-weight: bolder;
 }
 
 .heading-box .medium-heading {
-    font-size: 2.7em;
-    font-weight: bolder;
+  font-size: 2.7em;
+  font-weight: bolder;
 }
 
 .heading-box .small-heading {
-    font-size: 1.75em;
-    font-weight: bolder;
+  font-size: 1.75em;
+  font-weight: bolder;
 }
-

@@ -1,276 +1,269 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 :root {
-    --primary-color: #ff4e00;;
-    --primary-color-success: #85fca7;
-    --primary-color-failure: #fcb8b8;
-    --secondary-color: #15cdfc;
-    --secondary-color-bg: #dbdace;
+  --primary-color: #ff4e00;
+  --primary-color-success: #85fca7;
+  --primary-color-failure: #fcb8b8;
+  --secondary-color: #15cdfc;
+  --secondary-color-bg: #dbdace;
 }
 
 * {
-    margin: 0;
-    font-family: 'Zilla Slab', serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Zilla Slab", serif;
+  scroll-behavior: smooth;
 }
 
-
 section {
-    padding: 5rem;
+  padding: 5rem;
 }
 
 h1 {
-    font-size: 2.25em;
-    padding: 0.25rem;
-    font-weight: bolder;
+  font-size: 2.25em;
+  padding: 0.25rem;
+  font-weight: bolder;
 }
 
 p {
-    font-size: 1.15em;
+  font-size: 1.15em;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-
-nav {
-    grid-area: nav;
-    background-color: black;
-    border-top-right-radius: 2rem;
-}
-
-header {
-    grid-area: head;
-    background-color: black;
-    position: relative;
-}
-
-.heading-top {
-    font-size: xx-large;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    position: absolute;
-    right: 0px;
-    top: 70px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+aside {
+  grid-area: aside;
+  background-color: black;
 }
 
 .ul-left {
-    list-style: none;
-    position: sticky;
-    top: 0;
+  list-style: none;
+  position: sticky;
+  top: 0;
 }
-
 
 .li-left .link-left {
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
 .btn-left {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 1rem;
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 1.5rem;
-    background-color: black;
-    color: whitesmoke;
-    cursor: pointer;
+  padding: 0.75rem;
+  border: none;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.5rem;
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
 .btn-left:hover {
-    background-color: var(--primary-color);
-    color: black;
+  border-bottom: 3px solid var(--primary-color);
+  color: black;
 }
 
 .btn-left:active {
-    transform: translateY(6px);
+  transform: translateY(6px);
 }
 
+.header-top {
+  grid-area: nav;
+  background-color: black;
+  position: relative;
+}
+
+.heading-top {
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+}
+
+
 .cards-box {
-    display: flex;
+  display: flex;
 }
 
 .alert-box {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 100%;
-    height: 50vh;
-    flex-wrap: wrap;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 100%;
+  height: 50vh;
+  flex-wrap: wrap;
 }
 
 .badge-box {
-    margin: 3rem;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
 }
 
 .avatar-box {
-    display: flex;
-    height: 30vh;
-    width: 70%;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  height: 30vh;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .input-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
 
 .avatar-box-badge {
-    display: flex;
-    height: 30vh;
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  height: 30vh;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .buttons-box {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
-    height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  height: 10vh;
 }
 
 .icon-box {
-    margin: 3rem;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
 }
 
 .image-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
 }
 
 .heading-box {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    padding: 1.5rem;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 1.5rem;
+  justify-content: space-between;
 }
 
 .text-box {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .modal-box {
-    border: 1px solid;
-    height: 150px;
-    margin: 1rem;
-    box-shadow: black 5px 5px 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  border: 1px solid;
+  height: 150px;
+  margin: 1rem;
+  box-shadow: black 5px 5px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .nav-box {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .content {
-    grid-area: content;
-    border-top-left-radius: 2rem;
-    background-color: #E5E7EB;
-
+  grid-area: content;
+  background-color: #e5e7eb;
 }
 
 .email {
-    display: flex;
-    justify-content: flex-end;
-    font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
 }
 
 .priyansh {
-    font-family: 'Lobster', cursive;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
+  font-family: "Lobster", cursive;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
 }
 
 .foot {
-
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .foot .foot-content {
-    display: inline;
-    padding: 16px 18px;
-    cursor: pointer;
+  display: inline;
+  padding: 16px 18px;
+  cursor: pointer;
 }
 
 footer {
-    grid-area: footer;
-    height: 200px;
-    background-color: black;
-    color: white;
-    margin: 0;
+  grid-area: footer;
+  height: 200px;
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
 .doc-layout {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 16px;
-    grid-template-areas:
-        "head head"
-        "nav content"
-        "nav footer";
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 16px;
+  grid-template-areas:
+    "nav nav"
+    "aside content"
+    "aside footer";
 }
 
-
 @media only screen and (max-width: 688px) {
-    nav {
-        visibility: hidden;
-    }
+  aside {
+    display: none;
+  }
 
-    .doc-layout {
-        display: grid;
-        grid-template-areas:
-            "head"
-            "content"
-            "footer";
-    }
+  .doc-layout {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "content"
+      "footer";
+  }
 
-    section {
-        padding: 1rem;
-        margin: 0;
-    }
+  section {
+    padding: 1rem;
+    margin: 0;
+  }
 
-    * {
-     width: 80%;   
-    } 
-
-
-    
+  .content {
+    width: 100%;
+  }
 }
