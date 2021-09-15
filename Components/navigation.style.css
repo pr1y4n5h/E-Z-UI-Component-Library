@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
+  .nav-bar {
     height: 80px;
     justify-content: space-between;
     max-width: 100%;

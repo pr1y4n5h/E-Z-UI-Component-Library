@@ -40,8 +40,8 @@
   height: 18px;
   font-weight: bolder;
   border-radius: 50%;
-  bottom: 0;
-  border: 1px solid;
+  bottom: 8px;
+  right: 14px;
 }
 
 .avatar-badge .available {

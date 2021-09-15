@@ -9,7 +9,7 @@
 @import url("Components/navigation.style.css");
 @import url("Components/typography.style.css");
 @import url("Components/modal.style.css");
-
+@import url("Components/icons.style.css");
 
 :root {
   --primary-color: #ff4e00;
@@ -49,15 +49,6 @@
   justify-content: space-evenly;
 }
 
-.icons {
-  width: 40px;
-}
-
-.icons-img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
 
 .card-horizontal {
   display: flex;
