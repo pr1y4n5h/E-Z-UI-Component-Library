@@ -59,7 +59,7 @@ aside {
 .ul-left {
   list-style: none;
   position: sticky;
-  top: 0;
+  top: 80px;
 }
 
 .li-left .link-left {
@@ -130,15 +130,6 @@ aside {
 
 .avatar-box {
   text-align: center;
-}
-
-.input-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 1rem;
 }
 
 .buttons-box {
