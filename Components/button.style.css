@@ -1,0 +1,188 @@
+/* Buttons */
+
+.buttons-box button {
+  margin: 0 2rem;
+}
+
+.primary-btn-1 {
+    background: var(--primary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .primary-btn-1:hover {
+    background: var(--base-color);
+    color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .primary-btn-1:active {
+    transform: translateY(6px);
+  }
+  
+  .primary-btn-2 {
+    background: var(--secondary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .primary-btn-2:hover {
+    background: var(--base-color);
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .primary-btn-2:active {
+    transform: translateY(6px);
+  }
+  
+  .primary-btn-3 {
+    background: var(--tertiary-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--tertiary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .primary-btn-3:hover {
+    background: var(--base-color);
+    color: var(--tertiary-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .primary-btn-3:active {
+    transform: translateY(6px);
+  }
+  
+  .primary-btn-4 {
+    background: var(--dark-color);
+    border-radius: 4px;
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--dark-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .primary-btn-4:hover {
+    background: var(--base-color);
+    color: var(--dark-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .primary-btn-4:active {
+    transform: translateY(6px);
+  }
+  
+  .secondary-btn-1 {
+    background: var(--base-color);
+    border-radius: 6px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .secondary-btn-1:hover {
+    background: var(--primary-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .secondary-btn-1:active {
+    transform: translateY(6px);
+  }
+  
+  .secondary-btn-2 {
+    background: var(--base-color);
+    border-radius: 6px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .secondary-btn-2:hover {
+    background: var(--secondary-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .secondary-btn-2:active {
+    transform: translateY(6px);
+  }
+  
+  .secondary-btn-3 {
+    background: var(--base-color);
+    border-radius: 6px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--tertiary-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .secondary-btn-3:hover {
+    background: var(--tertiary-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .secondary-btn-3:active {
+    transform: translateY(6px);
+  }
+  
+  .secondary-btn-4 {
+    background: var(--base-color);
+    border-radius: 6px;
+    color: var(--dark-color);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid var(--dark-color);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .secondary-btn-4:hover {
+    background: var(--dark-color);
+    color: var(--base-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .secondary-btn-4:active {
+    transform: translateY(6px);
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .buttons-box button {
+      margin: 0 0.75rem;
+    }
+  }

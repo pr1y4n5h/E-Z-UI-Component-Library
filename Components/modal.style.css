@@ -1,0 +1,32 @@
+.modal-box {
+    border: 1px solid;
+    height: 150px;
+    margin: 1rem;
+    box-shadow: black 5px 5px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .modal {
+    position: absolute;
+    font-size: 1.5em;
+  }
+  
+  .modal-box .modal-x {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 5px;
+    top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+  }
+  
+  .modal-x:hover {
+    background-color: red;
+  }
+  

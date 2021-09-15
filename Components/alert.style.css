@@ -1,46 +1,63 @@
-.alert {
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem;
-    font-weight: bolder;
+.alert-type {
+  font-weight: bolder;
+  border: none;
+}
+
+.alert-type .success-1 {
+  color: darkgreen;
+  background-color: var(--primary-color-success);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+}
+
+.alert-type .failure-1 {
+  color: darkred;
+  background-color: var(--primary-color-failure);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+}
+
+.alert-type .normal-1 {
+  color: #0400fc;
+  background-color: var(--secondary-color);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 2px 0px 17px -2px rgba(0, 0, 0, 0.68);
+}
+
+.alert-type .success-2 {
+  color: darkgreen;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 1px 15px -4px rgba(7, 163, 0, 0.62);
+  box-shadow: 5px 1px 15px -4px rgba(7, 163, 0, 0.62);
+}
+
+.alert-type .failure-2 {
+  color: darkred;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 1px 15px -4px rgba(224, 0, 0, 0.7);
+  box-shadow: 5px 1px 15px -4px rgba(224, 0, 0, 0.7);
+}
+
+.alert-type .normal-2 {
+  color: #0400fc;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 1px 15px -4px rgba(4, 0, 252, 0.62);
+  box-shadow: 5px 1px 15px -4px rgba(4, 0, 252, 0.62);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .alert-type {
+    padding: 0;
   }
   
-  .success-1 {
-    border: 2px solid;
-    color: darkgreen;
-    background-color: var(--primary-color-success);
-    box-shadow: #116304 5px 5px 5px;
-  }
-  
-  .failure-1 {
-    border: 2px solid #fc0202;
-    color: darkred;
-    background-color: var(--primary-color-failure);
-    box-shadow: #fc0202 5px 5px 10px;
-  }
-  
-  .normal-1 {
-    border: 2px solid #0400fc;
-    color: #0400fc;
-    background-color: var(--secondary-color);
-    box-shadow: #0400fc 5px 5px 10px;
-  }
-  
-  .success-2 {
-    border: 2px solid;
-    color: darkgreen;
-    box-shadow: #116304 3px 3px 6px;
-  }
-  
-  .failure-2 {
-    border: 2px solid #fc0202;
-    color: darkred;
-    box-shadow: #fc0202 3px 3px 6px;
-  }
-  
-  .normal-2 {
-    border: 2px solid #0400fc;
-    color: #0400fc;
-    box-shadow: #0400fc 3px 3px 6px;
-  }
-  
+}

@@ -1,0 +1,44 @@
+
+.avatar-box img {
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 1rem;
+}
+
+.avatar1 {
+    height: 8vh;
+    width: 8vh;
+  }
+  
+  .avatar2 {
+    height: 13vh;
+    width: 13vh;
+  }
+  
+  .avatar3 {
+    height: 18vh;
+    width: 18vh;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .alert-type {
+      padding: 0;
+    }
+
+    .avatar1 {
+      height: 50px;
+      width: 50px;
+    }
+    
+    .avatar2 {
+      height: 80px;
+      width: 80px;
+    }
+    
+    .avatar3 {
+      height: 100px;
+      width: 100px;
+    }
+    
+  }

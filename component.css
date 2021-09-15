@@ -17,7 +17,7 @@
 }
 
 section {
-  padding: 5rem;
+  padding: 1.5rem;
 }
 
 h1 {
@@ -92,40 +92,27 @@ aside {
 }
 
 .logo {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
-
 
 .cards-box {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .alert-box {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  border-radius: 1rem;
-  max-width: 100%;
-  height: 50vh;
-  flex-wrap: wrap;
+  margin: 1rem auto;
 }
 
 .badge-box {
   margin: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  text-align: center;
 }
 
 .avatar-box {
-  display: flex;
-  height: 30vh;
-  width: 70%;
-  align-items: center;
-  justify-content: space-evenly;
+  text-align: center;
 }
 
 .input-box {
@@ -137,19 +124,10 @@ aside {
   padding: 1rem;
 }
 
-.avatar-box-badge {
-  display: flex;
-  height: 30vh;
-  width: 50%;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .buttons-box {
-  display: flex;
-  justify-content: space-evenly;
   padding: 2rem;
-  height: 10vh;
+  margin: 1.5rem 0;
+  text-align: center;
 }
 
 .icon-box {
@@ -164,22 +142,6 @@ aside {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-}
-
-.heading-box {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  padding: 1.5rem;
-  justify-content: space-between;
-}
-
-.text-box {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  justify-content: space-between;
-  padding: 1.5rem;
 }
 
 .modal-box {
@@ -200,7 +162,6 @@ aside {
 
 .content {
   grid-area: content;
-  background-color: #e5e7eb;
 }
 
 .email {
@@ -227,6 +188,27 @@ aside {
   cursor: pointer;
 }
 
+
+
+.code-snippet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.code-snippet-div {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-top: 2rem; /* 16:9 Aspect Ratio */
+}
+
 footer {
   grid-area: footer;
   height: 200px;
@@ -245,13 +227,14 @@ footer {
     "aside footer";
 }
 
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 768px) {
   aside {
     display: none;
   }
 
   .doc-layout {
-    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto;
     grid-template-areas:
       "nav"
       "content"
@@ -259,11 +242,32 @@ footer {
   }
 
   section {
-    padding: 1rem;
-    margin: 0;
+    padding: 0;
+    margin: 0 0.5rem;
+    width: 100%;
   }
 
   .content {
     width: 100%;
+  }
+
+  .alert-box {
+    padding: 0;
+    width: 100%;
+  }
+
+  .avatar-box {
+    text-align: start;
+  }
+
+  .badge-box {
+    margin: 2rem;
+    text-align: start;
+  }
+
+  .buttons-box {
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: start;
   }
 }

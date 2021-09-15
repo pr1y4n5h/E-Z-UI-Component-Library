@@ -1,0 +1,57 @@
+.badge-box > span {
+  margin: 0 2rem;
+}
+
+.badges {
+  position: relative;
+  width: 40px;
+}
+
+.badge-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.badge-notif-1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 15px;
+  color: black;
+  font-weight: bolder;
+  border-radius: 50%;
+  height: 15px;
+  padding: 3px;
+  left: 25px;
+  bottom: 32px;
+}
+
+.avatar-badges {
+  position: relative;
+  width: 40px;
+}
+
+.avatar-badge {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  font-weight: bolder;
+  border-radius: 50%;
+  bottom: 0;
+  border: 1px solid;
+}
+
+.avatar-badge .available {
+  background-color: green;
+}
+
+.avatar-badge .busy {
+  background-color: red;
+}
+
+.avatar-badge .away {
+  background-color: yellow;
+}
