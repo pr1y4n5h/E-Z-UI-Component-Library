@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+:root {
+  --primary-color: #ff4e00;
+  --primary-color-success: #85fca7;
+  --primary-color-failure: #fcb8b8;
+  --secondary-color: #15cdfc;
+  --secondary-color-bg: #dbdace;
+}
+
+* {
+  margin: 0;
+  font-family: "Zilla Slab", serif;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: black;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+
+
+p {
+  font-size: 1.15rem;
+}
+
+
+
+aside {
+  grid-area: aside;
+  background-color: black;
+}
+
+
+
+.main-heading {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  margin: 2.5rem 0;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  margin: 1.8rem 0;
+
+ }
+
+.code-snippet-heading {
+  margin: 2rem 0;
+}
+
+.ul-left {
+  list-style: none;
+  position: sticky;
+  top: 80px;
+}
+
+.li-left .link-left {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn-left {
+  padding: 0.75rem;
+  border: none;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.5rem;
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn-left:hover {
+  border-bottom: 3px solid var(--primary-color);
+  color: black;
+}
+
+.btn-left:active {
+  transform: translateY(6px);
+}
+
+.header-top {
+  grid-area: nav;
+  background-color: black;
+  position: relative;
+}
+
+.heading-top {
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+}
+
+.cards-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.alert-box {
+  margin: 1rem auto;
+}
+
+.badge-box {
+  margin: 3rem;
+  text-align: center;
+}
+
+.avatar-box {
+  text-align: center;
+}
+
+.buttons-box {
+  padding: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.icon-box {
+  margin: 3rem;
+  text-align: center;
+}
+
+.nav-box {
+  padding: 1.5rem;
+}
+
+.content {
+  grid-area: content;
+}
+
+.email {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.priyansh {
+  font-family: "Lobster", cursive;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foot .foot-content {
+  display: inline;
+  padding: 16px 18px;
+  cursor: pointer;
+}
+
+.code-snippet-div {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 2rem;
+}
+
+
+.code-snippet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+footer {
+  grid-area: footer;
+  height: 200px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.doc-layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 8px;
+  grid-template-areas:
+    "nav nav"
+    "aside content"
+    "aside footer";
+}
+
+
+@media only screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  .doc-layout {
+    grid-gap: 0;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "nav"
+      "content"
+      "footer";
+  }
+
+  section {
+    padding: 0;
+    margin: 0 0.5rem;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .alert-box {
+    padding: 0;
+    width: 100%;
+  }
+
+  .avatar-box {
+    text-align: start;
+  }
+
+  .nav-box {
+    padding: 0;
+  }
+
+  .badge-box {
+    margin: 2rem;
+    text-align: start;
+  }
+
+  .buttons-box {
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: start;
+  }
+
+  .icon-box {
+    margin: 2rem;
+    text-align: start;
+  }
+
+}

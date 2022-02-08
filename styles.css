@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Zilla+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("Components/alert.style.css");
+@import url("Components/avatar.style.css");
+@import url("Components/badge.style.css");
+@import url("Components/button.style.css");
+@import url("Components/card.style.css");
+@import url("Components/navigation.style.css");
+@import url("Components/typography.style.css");
+@import url("Components/modal.style.css");
+@import url("Components/icons.style.css");
+
+:root {
+  --primary-color: #ff4e00;
+  --primary-color-success: #85fca7;
+  --primary-color-failure: #fcb8b8;
+  --secondary-color: #18dcff;
+  --secondary-color-bg: #dbdace;
+  --base-color: #fff;
+  --tertiary-color: #0be881;
+  --dark-color: #000;
+}
+
+/* Components */
+
+.normal-input {
+  border: 2px solid;
+  width: 30vh;
+  padding: 0.5rem;
+}
+
+.error-input {
+  border: 2px solid red;
+  width: 30vh;
+  padding: 0.5rem;
+  color: red;
+}
+
+.error-input:active {
+  border: 4px solid red;
+}
+
+.avatar-box-badge {
+  display: flex;
+  height: 30vh;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.card-horizontal {
+  display: flex;
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+.img-h2 {
+  padding: 2rem;
+}
+

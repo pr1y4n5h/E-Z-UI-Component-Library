@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Z UI Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="component.css" />
+    <link rel="shortcut icon" type="image/jpg" href="/images/EZLogo1.png" />
+  </head>
+
+  <body>
+    <main class="doc-layout">
+      <aside>
+        <ul class="ul-left">
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#alert" class="li-left link-left">Alert</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#avatar" class="li-left link-left">Avatar</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#badge" class="li-left link-left">Badge</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#buttons" class="li-left link-left">Buttons</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#cards" class="li-left link-left">Cards</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#icon" class="li-left link-left">Icons</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#content-nav" class="li-left link-left">Navigation</a>
+            </button>
+          </li>
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#modals" class="li-left link-left">Modal</a>
+            </button>
+          </li>
+
+          <li class="li-left">
+            <button class="btn-left">
+              <a href="#typography" class="li-left link-left">Typography</a>
+            </button>
+          </li>
+          <li class="li-left"></li>
+        </ul>
+      </aside>
+
+      <nav class="header-top">
+        <span>
+          <img class="logo" src="/images/EZlogo1.png" />
+        </span>
+        <span class="heading-top"> E-Z UI Library </span>
+      </nav>
+
+      <div class="content">
+        <section>
+          <h1 class="main-heading">Getting started</h1>
+          <p>
+            To get the styles of the components, add the following line of code
+            in the <b>head</b> tag of your html document.
+          </p>
+
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fez-ui-library.netlify.app%252Fstyles.css%2522%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <section class="alert" id="alert">
+          <h1 class="main-heading">Alert</h1>
+          <div class="alert-box">
+            <h2 class="sub-heading">Type 1 Alerts</h2>
+            <div class="alert-type">
+              <div class="alert-type success-1">
+                ✔️ This is a Success Alert!
+              </div>
+              <div class="alert-type failure-1">
+                ❌ This is a Failure Alert!
+              </div>
+              <div class="alert-type normal-1">🔔 This is a Normal Alert!</div>
+            </div>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-type%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520success-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%25E2%259C%2594%25EF%25B8%258F%2520This%2520is%2520a%2520Success%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520failure-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25E2%259D%258C%2520This%2520is%2520a%2520Failure%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520normal-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25F0%259F%2594%2594%2520This%2520is%2520a%2520Normal%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+              class="code-snippet"
+            >
+            </iframe>
+          </div>
+
+          <div class="alert-box">
+            <h2 class="sub-heading">Type 2 Alerts</h2>
+            <div class="alert-type">
+              <div class="alert-type success-2">
+                ✔️ This is a Success Alert!
+              </div>
+              <div class="alert-type failure-2">
+                ❌ This is a Failure Alert!
+              </div>
+              <div class="alert-type normal-2">🔔 This is a Normal Alert!</div>
+            </div>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-type%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520success-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%25E2%259C%2594%25EF%25B8%258F%2520This%2520is%2520a%2520Success%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520failure-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25E2%259D%258C%2520This%2520is%2520a%2520Failure%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-type%2520normal-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%25F0%259F%2594%2594%2520This%2520is%2520a%2520Normal%2520Alert%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+              class="code-snippet"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="avatar" id="avatar">
+          <h1 class="main-heading">Avatar</h1>
+          <div class="avatar-box">
+            <img class="avatar1" src="/images/Card-image.jpg" />
+            <img class="avatar2" src="/images/Card-image.jpg" />
+            <img class="avatar3" src="/images/Card-image.jpg" />
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar1%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253Cimg%2520class%253D%2522avatar3%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="badge" id="badge">
+          <h1 class="main-heading">Badges</h1>
+          <h2 class="sub-heading">Badges in Icon</h2>
+          <div class="badge-box">
+            <span class="badges">
+              <span class="badge-notif-1"> 3 </span>
+              <img class="badge-img" src="/images/shoppingcart.svg" />
+            </span>
+            <span class="badges">
+              <span class="badge-notif-1"> 3 </span>
+              <img class="badge-img" src="/images/profile.svg" />
+            </span>
+            <span class="badges">
+              <span class="badge-notif-1"> 3 </span>
+              <img class="badge-img" src="/images/wishlist.svg" />
+            </span>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%25203%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fshoppingcart.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%25203%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fprofile.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-notif-1%2522%253E%25203%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522%252Fimages%252Fwishlist.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h2 class="sub-heading">Badges in Avatar</h2>
+          <div class="avatar-box">
+            <span class="avatar-badges">
+              <span class="avatar-badge">
+                <span class="avatar-badge available"> </span>
+              </span>
+              <img class="avatar2" src="/images/Card-image.jpg" />
+            </span>
+            <span class="avatar-badges">
+              <span class="avatar-badge">
+                <span class="avatar-badge busy"> </span>
+              </span>
+              <img class="avatar2" src="/images/Card-image.jpg" />
+            </span>
+            <span class="avatar-badges">
+              <span class="avatar-badge">
+                <span class="avatar-badge away"> </span>
+              </span>
+              <img class="avatar2" src="/images/Card-image.jpg" />
+            </span>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520available%2522%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520busy%2522%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522avatar-badges%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520away%2522%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar2%2522%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="buttons" id="buttons">
+          <h1 class="main-heading">Buttons</h1>
+
+          <h2 class="sub-heading">Primary Buttons</h2>
+          <div class="buttons-box">
+            <button class="primary-btn-1">Type 1</button>
+            <button class="primary-btn-2">Type 2</button>
+            <button class="primary-btn-3">Type 3</button>
+            <button class="primary-btn-4">Type 4</button>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522primary-btn-1%2522%253EType%25201%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522primary-btn-2%2522%253EType%25202%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522primary-btn-3%2522%253EType%25203%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522primary-btn-4%2522%253EType%25204%253C%252Fbutton%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h2 class="sub-heading">Secondary Buttons</h2>
+          <div class="buttons-box">
+            <button class="secondary-btn-1">Type 1</button>
+            <button class="secondary-btn-2">Type 2</button>
+            <button class="secondary-btn-3">Type 3</button>
+            <button class="secondary-btn-4">Type 4</button>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522secondary-btn-1%2522%253EType%25201%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522secondary-btn-2%2522%253EType%25202%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522secondary-btn-3%2522%253EType%25203%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522secondary-btn-4%2522%253EType%25204%253C%252Fbutton%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="cards" id="cards">
+          <h1 class="main-heading">Cards</h1>
+          <h2 class="sub-heading">Vertical Cards</h2>
+          <div class="cards-box">
+            <div class="simple-card">
+              <h2 class="card-title">Simple Card</h2>
+
+              <p class="card-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, consequatur? Autem iusto explicabo pariatur dicta
+                perferendis veritatis doloremque nisi reprehenderit adipisci
+                blanditiis, corrupti magnam deserunt voluptatum voluptatem
+                incidunt distinctio enim?
+              </p>
+            </div>
+
+            <div class="product-card-1">
+              <div class="product-card-top">
+                <img src="/images/Card-image.jpg" alt="{name}" />
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="card-title">Product Card 1</h3>
+
+                <p class="card-details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam nam sunt ratione quaerat! Eligendi minus eveniet totam
+                  sed quidem.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-card-2">
+              <div class="ribbon">
+                <span>Deluxe</span>
+              </div>
+              <div class="product-card-top">
+                <img src="/images/Card-image.jpg" alt="{name}" />
+              </div>
+
+              <div class="product-card-body">
+                <h3>Product Card 2</h3>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam nam sunt ratione quaerat! Eligendi minus eveniet totam
+                  sed quidem.
+                </p>
+
+                <div class="product-card-bottom">
+                  <button class="primary-btn-1">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522simple-card%2522%253E%250A%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ESimple%2520Card%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520blanditiis%252C%2520corrupti%2520magnam%2520deserunt%2520voluptatum%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520incidunt%2520distinctio%2520enim%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522product-card-1%2522%253E%250A%2509%253Cdiv%2520class%253D%2522product-card-top%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520alt%253D%2522%257Bname%257D%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522product-card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EProduct%2520Card%25201%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Veniam%2520nam%2520sunt%2520ratione%2520quaerat%21%2520Eligendi%2520minus%2520eveniet%2520totam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520sed%2520quidem.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%250A%253Cdiv%2520class%253D%2522product-card-2%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ribbon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EDeluxe%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-card-top%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520alt%253D%2522%257Bname%257D%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-card-body%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Ch3%253EProduct%2520Card%25202%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Veniam%2520nam%2520sunt%2520ratione%2520quaerat%21%2520Eligendi%2520minus%2520eveniet%2520totam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520sed%2520quidem.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2509%2520%253Cdiv%2520class%253D%2522product-card-bottom%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522primary-btn-1%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h2 class="sub-heading">Horizontal Cards</h2>
+
+          <div class="cards-box">
+            <div class="simple-card-hor">
+              <div class="card-hor-body">
+                <h2>Type 1</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, consequatur? Autem iusto explicabo pariatur dicta
+                  perferendis veritatis doloremque nisi reprehenderit adipisci
+                  blanditiis.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-card-hor">
+              <img src="/images/Card-image.jpg" />
+              <div class="card-hor-body">
+                <h2>Type 2</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, consequatur? Autem iusto explicabo pariatur dicta
+                  perferendis veritatis doloremque nisi reprehenderit adipisci
+                  blanditiis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522simple-card-hor%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor-body%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Ch2%253EType%25201%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509Lorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509blanditiis.%250A%2520%2520%2520%2520%2520%2509%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%250A%2520%253Cdiv%2520class%253D%2522product-card-hor%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252FCard-image.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-hor-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EType%25202%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509Lorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Suscipit%252C%2520consequatur%253F%2520Autem%2520iusto%2520explicabo%2520pariatur%2520dicta%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520perferendis%2520veritatis%2520doloremque%2520nisi%2520reprehenderit%2520adipisci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520blanditiis.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <hr />
+        <section class="icon" id="icon">
+          <h1 class="main-heading">Icons</h1>
+          <div class="icon-box">
+            <span class="icons">
+              <img class="icons-img" src="/images/shoppingcart.svg" />
+            </span>
+            <span class="icons">
+              <img class="icons-img" src="/images/profile.svg" />
+            </span>
+            <span class="icons">
+              <img class="icons-img" src="/images/wishlist.svg" />
+            </span>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fshoppingcart.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2509%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fprofile.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icons-img%2522%2520src%253D%2522%252Fimages%252Fwishlist.svg%2522%2520%252F%253E%250A%253C%252Fspan%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <hr />
+
+        <section class="content-nav" id="content-nav">
+          <h1 class="main-heading">Navigation</h1>
+
+          <div class="nav-box">
+            <nav class="nav-bar">
+              <ul class="navigation-ul">
+                <li>HOME</li>
+                <li>TAG</li>
+                <li>AUTHOR</li>
+                <li>HELP</li>
+              </ul>
+            </nav>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-bar%2522%253E%250A%2520%2520%2520%253Cul%2520class%253D%2522navigation-ul%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EHOME%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253ETAG%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EAUTHOR%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EHELP%253C%252Fli%253E%250A%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="modals" id="modals">
+          <h1 class="main-heading">Modals</h1>
+
+          <div class="modal-box">
+            <div class="modal">
+              Are you sure you want to exit? Press X to exit.
+            </div>
+            <div class="modal-x">X</div>
+          </div>
+
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Are%2520you%2520sure%2520you%2520want%2520to%2520exit%253F%2520Press%2520X%2520to%2520exit.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-x%2522%253EX%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="typography" id="typography">
+          <h1 class="main-heading">Typography</h1>
+
+          <div class="heading-box">
+            <h2 class="sub-heading">Headings</h2>
+            <div class="heading">
+              <h2 class="heading big">Big Heading</h2>
+              <h2 class="heading medium">Medium Heading</h2>
+              <h2 class="heading small">Small Heading</h2>
+            </div>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522heading%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522heading%2520big%2522%253EBig%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522heading%2520medium%2522%253EMedium%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522heading%2520small%2522%253ESmall%2520Heading%253C%252Fh2%253E%250A%253C%252Fdiv%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="text-box">
+            <h2 class="sub-heading">Texts</h2>
+            <div class="text">
+              <p class="text big">This is a bigger text...</p>
+              <p class="text medium">This is a medium text...</p>
+              <p class="text small">This is a smaller text...</p>
+            </div>
+          </div>
+          <h3 class="code-snippet-heading">Code Snippet :</h3>
+          <div class="code-snippet-div">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28254%2C128%2C72%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520big%2522%253EThis%2520is%2520a%2520bigger%2520text...%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520medium%2522%253EThis%2520is%2520a%2520medium%2520text...%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520small%2522%253EThis%2520is%2520a%2520smaller%2520text...%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+              class="code-snippet"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <footer>
+          <div>
+            <ul class="foot">
+              <li class="foot-content">
+                <a href="https://www.instagram.com/pr1y4n5h/">
+                  <img height="25vh" src="/images/instalogo.png"
+                /></a>
+              </li>
+              <li class="foot-content">
+                <a href="https://www.facebook.com/me.thepriyansh/">
+                  <img height="25vh" src="/images/fblogo.png" />
+                </a>
+              </li>
+              <li class="foot-content">
+                <a href="https://github.com/pr1y4n5h">
+                  <img height="25vh" src="/images/githublogo.png" />
+                </a>
+              </li>
+              <li class="foot-content">
+                <a href="https://www.linkedin.com/in/priyansh-maurya-a0396760/"
+                  ><img height="25vh" src="/images/linkedinlogo.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="priyansh">Made with ❤ by Priyansh!</div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
